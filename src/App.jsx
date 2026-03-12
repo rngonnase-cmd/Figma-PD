@@ -581,7 +581,7 @@ const TrainerAvatar = ({ seed=1, size=56 }) => {
   return (
     <img
       src={imgs[seed] || imgs[1]}
-      width={size} height={size}
+      width={size} height={Math.round(size*1.4)}
       style={{ borderRadius:"50%", objectFit:"cover", objectPosition:"center top", flexShrink:0, display:"block" }}
       alt="trainer"
     />
